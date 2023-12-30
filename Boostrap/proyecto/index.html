@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Estadios Qatar - 2022</title>
+</head>
+
+<body class="container-fluid">
+    <!-- menu hamburguesa -->
+    <!-- le paso una clase para dar un color de fondo al encabezado
+    y le elimino el color de fondo que trae boostrap -->
+    <header class="navbar navbar-expand-lg encabezado">
+        <nav class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <!-- pongo el logo del mundial y le asigno una clase -->
+                <img class="imgLogo" src="img/logo.jpg" alt="Logo" title="Logo de Qatar">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <!-- corro el menu a la derecha -->
+                <ul class="navbar-nav ms-auto menuNav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+
+    <!-- carrousl de imagenes -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/qatar1.jpg" class="d-block w-100" alt="QATAR">
+            </div>
+            <div class="carousel-item">
+                <img src="img/qatar2.jpg" class="d-block w-100" alt="Qatar">
+            </div>
+            <div class="carousel-item">
+                <img src="img/qatar3.jpg" class="d-block w-100" alt="Qatar">
+            </div>
+
+        </div>
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+ 
+        <!-- descripcion de los estadios -->
+        <div class="estadios">
+            <h2>Estadios del Mundial de Qatar 2022</h2>
+            <!-- <p>Capacidad para 40.000 espectadores.</p>
+        <p>Su nombre es 974 como el número de contenedores utilizados para construirlo y como el código de país de Qatar.</p>
+        <p>Fue inaugurado para la Copa Árabe de la FIFA y será desmantelado al final del Mundial.</p>
+         -->
+        </div>
+        <!-- CARDS -->
+        <div class="container-fluid">
+        <div class="row">
+            <div class="card col-xl-3 col-md-4 col-sm-12">
+                <img src="img/974.jpg" class="card-img-top" alt="974">
+                <div class="card-body">
+                    <h5 class="card-title">Estadio 974 </h5>
+                    <p class="card-text">Capacidad para 40.000 espectadores.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Elegir Partidos </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar.
+                </button>
+            </div>
+
+
+            <div class="card col-xl-3 col-md-4 col-sm-12">
+                <img src="img/Al-Rayyan.jpg" class="card-img-top" alt="Al-Rayyan">
+                <div class="card-body">
+                    <h5 class="card-title">Estadio Al-Rayyan </h5>
+                    <p class="card-text">Capacidad para 45.000 espectadores.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Elegir Partidos </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar.
+                </button>
+            </div>
+
+
+            <div class="card col-xl-3 col-md-4 col-sm-12">
+                <img src="img/al_bayt.jpg" class="card-img-top" alt="al_bayt">
+                <div class="card-body">
+                    <h5 class="card-title">Estadio Al Bayt</h5>
+                    <p class="card-text">Capacidad para 60.000 espectadores.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Elegir Partidos </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar.
+                </button>
+            </div>
+
+
+            <div class="card col-xl-3 col-md-4 col-sm-12">
+                <img src="img/Al_Thumama.jpg" class="card-img-top" alt="Al_Thumama">
+                <div class="card-body">
+                    <h5 class="card-title">Estadio Al Thumama</h5>
+                    <p class="card-text">Capacidad para 40.000 espectadores.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Elegir Partidos </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar.
+                </button>    
+            </div>
+
+
+            <div class="card col-xl-3 col-md-4 col-sm-12">
+                <img src="img/Al_Yanub.jpg" class="card-img-top" alt="Al_Yanub">
+                <div class="card-body">
+                    <h5 class="card-title">Estadio Al Yanub </h5>
+                    <p class="card-text">Capacidad para 40.000 espectadores.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Elegir Partidos </a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar las  Entradas.
+                      </button>
+            </div>
+
+            <div class="card col-xl-3 col-md-4 col-sm-12">
+                <img src="img/Ciudad_de_la_Educación.jpg" class="card-img-top" alt="Ciudad_de_la_Educación">
+                <div class="card-body">
+                    <h5 class="card-title">Estadio Ciudad de la Educación </h5>
+                    <p class="card-text">Capacidad para 45.000 espectadores.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Elegir Partidos </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar las  Entradas.
+                  </button>
+            </div>
+
+
+            <div class="card col-xl-3 col-md-4 col-sm-12">
+                <img src="img/Internacional_Khalifa.jpg" class="card-img-top" alt="Internacional_Khalifa.">
+                <div class="card-body">
+                    <h5 class="card-title">Estadio Internacional Khalifa </h5>
+                    <p class="card-text">Capacidad para 45.000 espectadores.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Elegir Partidos </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar las  Entradas.
+                  </button>
+            </div>
+
+
+            <div class="card col-xl-3 col-md-4 col-sm-12">
+                <img src="img/luisail.jpg" class="card-img-top" alt="Lusail">
+                <div class="card-body">
+                    <h5 class="card-title">Estadio Lusail</h5>
+                    <p class="card-text">Capacidad para 80.000 espectadores.</p>
+                </div>
+                <a href="#" class="btn btn-primary">Elegir Partidos </a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Comprar las  Entradas.
+                  </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- modal -->
+
+    <!-- Button trigger modal -->
+ <button type="button" class="btn btnCompra" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    ¿Desea confirma la operacion SI O NO?
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compra de entradas</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Desea confirma la operacion SI O NO?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Confimar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

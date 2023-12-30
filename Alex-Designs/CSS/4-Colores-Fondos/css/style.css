@@ -1,0 +1,100 @@
+body{
+    background-color: aqua;
+    box-sizing: border-box;
+}
+
+/* reinicio margenes y box sinzing */
+
+    *{
+        margin:0;
+        box-sizing:border-box;
+    }
+/* https://htmlcolorcodes.com/es/nombres-de-los-colores/ */
+/* el color se puede definir por palabra--> red o combiando, red claro.
+Por ejemplo: lightcoral es un tono de rojo clarito*/
+/*por rgb--> tiene la combinacion entre rojo verde y azul
+con valores de 0 a 255, y puede ir un cuarto valor que es es de la transparencia
+valores de 0 a 1
+/* por colores hexagecimal.#fafafa */
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.main{
+    height: 800px; 
+    background-image: linear-gradient(#1303038b, #01010ea1),url('../img/montaña.jpg');
+    background-size:cover;
+    padding: 20px 40px;
+    color:#fff;
+    
+
+}    
+
+.main__title{
+    background-color: #000;
+    /* espacio entre letras. */
+    letter-spacing: 01px;
+    /* espacio entre palabras */
+    word-spacing: 1px;
+    /*si las palabras suprean al contendepr*/
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.main__paragraph{
+    text-align: center;
+    /* espacio entre lineas */
+    line-height: 50px;
+    font-size: 25px;
+}
+.main__paragraph--second{
+    font-weight: 1500px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main__cta{
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding:20px 80px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+div{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}   
+
+
+.title{
+    color: indianred;
+    color:rgb(255, 122, 200,1);
+    border: 1px solid #1a1616;
+    background-color: royalblue;
+    padding: 20px 40px;
+   /* poner una imagen de fondo 
+    background-image: url(../img/montaña.jpg);
+    /* ancho de la imagen de fondo 
+    background-size: cover;
+    /*  posiciion de la imagen respecto al fondo 
+    background-position: center;*/
+
+    /* usando grandiente */
+    /* se pasa de un color a otro */
+    /* se puede poner una imagen de fondo con gradientes. */
+    /* background-image:linear-gradient(#008000, #0000ff,url('../img/background.jpg')); */
+    background-size: cover;
+    height:50px;
+    width: auto;
+}
+

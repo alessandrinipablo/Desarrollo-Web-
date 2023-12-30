@@ -1,0 +1,153 @@
+/* importo el tipo de fuente ROBOTO */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/********** CODER CURSOS **********/
+
+/* PARA EL BOBY LE PASO EL TIPO DE LETRA */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  ANCHO DEL LOGO, Y QUE CUANDO PASE EL CURSOR APAREZCA LA MANO*/
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+
+/* ESTILO DEL NAVEGADOR */
+/* ACTIVO FLEX */
+/*EL SPACE AROUND DVIDE SEGUN LA CANTIDAD DE HIJOS, Y LOS PONE A IGUAL DISTANCIA DE CADA UNO*/
+/*ALINEA LOS HIJOS VERTICALEMTE EN EL CENTRO*/
+/* permanezca visible mientras el usuario se desplaza por la página*/
+/* Asegura que el header siempre esté fijo en la parte superior */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+/*ELIMINO EL ESTILO VIÑETA*/
+/* INLINE BLOCK PONE LOS ELEMENTOS UNO AL LADO DEL OTRO */
+/* PADING VERTICAL Y HORIZONTAL CERO, LATERALES 20PX */
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/*text-decoration: none--> ELIMINA SUBRAYADO*/
+/*pONE EN MAYUSCULA Y TAMAÑO 500PX*/
+a{
+    color: #fafafa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*cLASE TIENDA, SE LE DA COLOR, PADING, Y UN BORDE REDONDEADO*/
+.tienda {
+    background-color: #84bdf3;
+    padding: 9px 25px;
+    border-radius: 50px;
+}
+
+/*BOTONITO DE WHATSAPP*/
+
+/*ESTILOS AL LOGO, ANCHO, POSICIION FIJA*/
+.logoWhatsapp {
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*BANNER*/
+/*FONDO DE IMAGEN */
+/* Ajusta la imagen de fondo*/
+/*ACCTIVO FLEX*/
+/*  flex-direction: column;: Define la dirección de los elementos hijos dentro del Flexbox verticalmente,   uno    encima del otro.
+    justify-content: center;: Centra los elementos hijos verticalmente dentro del espacio disponible.
+    align-items: center;: Centra los elementos hijos horizontalmente dentro del espacio disponible. */
+
+.banner {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    padding: 100px;
+}
+
+/*CARDS DE CURSOS */
+/*ACTIVO GRID, HAGO UNA GRILLA DE 1FR Y POR 4 VECES, Y UN ESPACIO ENTRE 20PX*/
+.contenedorCursos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #E0DFE6;
+}
+
+.cursoImagen {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.cursoTitulo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cursoDescripcion {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2ecc71;
+    text-align: center;
+}
+
+.cursoBtn {
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: #fafafa;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+/*Aplicamos Medias Queries */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedorCursos {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contenedorCursos {
+        grid-template-columns: 1fr;
+    }
+}

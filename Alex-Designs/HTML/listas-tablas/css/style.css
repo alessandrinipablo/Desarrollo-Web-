@@ -1,0 +1,15 @@
+a,p{
+    background-color: yellow;
+}
+
+
+.imagenPerfil{
+    width: 75px;
+    height: 75px;
+}
+
+
+/*  estilos a la tabla */
+table, th, td{
+    border: 1px solid black;
+}

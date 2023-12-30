@@ -1,0 +1,97 @@
+/* reinicia los parametros de css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: aquamarine;
+}
+
+
+/*  En CSS ESTA EL CONCEPTO DE CAJA
+TODAS LAS ETIQUETAS LO SON, ESO SIRVE PARA MANIPULAR LAS PROPIEDADES
+ */
+
+ /* BOX MODEL */
+
+/* Propiedas mas comunes */
+
+/*
+
+width--> define el ancho de los elementos(por defecto esta en automatico)
+max-width --> define un ancho maximo.
+min-width --> define un ancho minimo.
+height altura del elemento.
+max-height y min-height para la altura.
+overflow hidden es cuando el contenedio desborda el elemento-
+
+
+*/
+
+h1, h2{
+    background-color: seagreen;
+    color:white;
+    width: 500px;
+    max-width: 600px;
+    height: 40px;
+}
+
+/* padding */
+/* crea un espacio entre el borde del contendio
+y el borde del elemento. */
+
+/* padding tiene 4 subpropiedades
+padding top  --> arriba
+padding right -->derecha
+padding botton-->abajo
+padding left -->izquierda*/
+
+/*  pero ponniendo padding solo las agrupa
+si pongo un numero es para todas las propiedas
+si pongo dos es para arriba abajo y el otro izquierda derecha */
+
+/* capa border */
+
+/* linea que contornea al elemento 
+tiene 3 subpropiedades
+color, estilo y ancho */
+
+
+/* estilos de los bordes */
+    /* 
+
+    Dotted- La línea de el borde será por medio de puntos
+
+    Dashed- La línea del borde será por medio de guiones
+
+    Solid - La línea será solida sin ninguna alteración
+
+    Double - Habrá dos líneas solidas como borde
+
+    Groove - Define un borde ranurado en 3D
+
+    Ridge  - Define un borde estriado en 3D
+
+*/
+p {
+    background-color: fuchsia;
+    font-size: 30px;
+    padding: 10px 20px;
+    border: 1px groove black;
+    margin: 20px 25px 20px 25px;
+
+}
+
+
+/* margen  define la diferencia con otro elemento */
+
+/* las suppropiedas de margin son igual que padding
+    top right botton left*/
+*/
+
+a{
+    text-decoration: none;
+}

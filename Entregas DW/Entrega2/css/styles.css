@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header, main, footer{
+    background-color:white;
+    margin:3px;
+    border: 1px solid black;
+}
+
+
+/* Aplico la fuente que baje de Google Fonts*/
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos al extremo izquierdo y derecho */
+    align-items: center; /* Centrar verticalmente los elementos en el header */
+    padding: 20px; /* Añadir espacio alrededor del contenido */
+    background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+.nombreEmpresa h2 {
+    margin: 0; /* Eliminar márgenes predeterminados del h1 */
+}
+
+nav ul {
+    list-style: none; /* Eliminar viñetas de la lista */
+    padding: 0; /* Eliminar padding predeterminado de la lista */
+    display: flex; /* Utilizar flexbox para los elementos de la lista */
+}
+
+nav li {
+    margin-right: 20px; /* Espaciado entre elementos de la lista */
+}
+
+nav a {
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: #080808; /* Color del texto del enlace */
+    font-size: 1rem;
+}
+
+
+
+main{
+    margin: 1px;
+}
+
+.tituloTarjetaIndex{
+    text-align: center;
+}
+
+.imagenIndex{
+    width: 300px;
+    height:300px;
+}

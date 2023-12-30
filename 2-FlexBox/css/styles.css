@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+/*En el body hereda todo*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Estilos FlexBox*/
+
+/* estilos al contenedor mayor (color de fondo
+bordes alto y ancho y bordes redondeados. */
+.padreFlex{
+    background-color: bisque;
+    border: 2px solid black;
+    width: 800px;
+    height: 600px;
+    border-radius: 4px;
+    margin: auto; /*la caja se va al medio*/
+    /*desde el contenedor padre se organiza flex*/
+    /*Aplicamos Flex al padre*/
+    /*1er propiedad que hay que aplicaar*/
+    display: flex;/*--> se activa el sistema de flex*/
+
+    /*por defecto todo se posiciona en formato fila (rows)*/
+    flex-direction:row; /*--> posicion en formato columna, igual lo dejo en rows*/
+
+    /*Si tengo muchos hijos, se va a acomodar en una fila , pero para que no quede
+    apretado se va para abajo*/
+    flex-wrap: wrap;
+
+    /*flex-flow:row wrap;*//*--> forma abreviada de configurar desde el padre a hijos, flex directcion y flex wrap pasando los dos paraemtros.*/
+    /*tengo que tener en cuenta si estoy configurando los hijos como fila o columna (el flex direction) */
+    /*si tengo flex direction row ordeno los hijos en el eje horizontal*/
+    /*si tengo flex direction en colum ordeno lo hijos en el eje vertical*/
+    justify-content:center;
+    /*justify-content: space-between;*/ /*--> otra opcion de justify content*/
+
+
+    /*los valores mas utilizaos son  flex-start flex end center y los spaces*/
+    /*align-items: flex-end;
+    align-items: flex-start;*/
+    align-items: center;
+}
+
+.hijoFlex{
+    background-color: chocolate;
+    height: 150px;
+    width: 150px;
+    border: 1px black dotted;
+    border-radius: 2px;
+}
+
+.hijoFlex p{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Para cambiar el orden de los elementos internamente, se nombre la clase de cada hijo con un nombre distino
+luego se llama a cada clase y se pone la propiedad order y se le pasa el nunmero que quiero que aparezca*/
+
+.primero{
+    order: 3;
+}
+
+.segundo{
+    order: 1;
+}
+.tercero{
+    order: 2;
+}
+
+
+.logo{
+    width: 90px;
+    cursor: pointer; /*cuando paso la manito por arriba el cursor aparace manito*/
+}
+
+header{
+    display: flex; /*activo flex*/
+    justify-content: space-around; /*separo los tres elementos*/
+    align-items: center;
+    background-color: black;
+    position: sticky; /*para que el header quede estatico cuando se scrolea*/
+    top:0; /*para que el header quede estatico cuando se scrolea*/
+}
+
+li{
+    list-style: none;
+    display:inline-block ;
+    padding: 0px 20px;
+    color: whitesmoke;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tienda{
+    background-color: #84bef3;
+    padding: 9px 25px;
+    border-radius: 50px;
+}
+
+/*Botonito de Whatsapp*/
+/*Para que queda abajo a la derecha*/
+.logoW{
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+ 
+
+.banner{
+    background-image: url("../img/programador.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    color: #fafaff;
+    padding: 100px;
+}
+

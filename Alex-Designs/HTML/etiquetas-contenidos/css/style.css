@@ -1,0 +1,18 @@
+
+/*  explicacion entre class y id */
+
+.parrafoClase{
+    text-align: center;
+    color: fuchsia;
+}
+
+
+#parrafoUno{
+    color: blue;
+}
+
+
+/* Scroll Behavior retraza el scrool, cuando navego por secciones. */
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,99 @@
+/* Primer Estilo CSS */
+
+/* Le doy un color
+un tamaño, un tipo de letra y una alineacion. */
+
+
+H1{
+    color:aquamarine;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/* Empiezo a dar estilos */
+
+/* Selector de tipo, es selecto de etiqueta, osea 
+invocando por su nombre */
+
+/* doy color de fondo y tipo de fuente */
+
+body{
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* color  y estilo  */
+h2{
+    color:saddlebrown;
+    font-style: italic;
+
+}
+
+/*  tamaño de fuente, y cambio la figura del viñeta de la lista
+ */
+li{
+    font-size: 25px;
+    list-style: square;
+}
+
+
+/* Selector de clase */
+
+/*  cuando queremos darle estilo a varias etiquetas, que son distantas
+se le pone class="nombre"  y se la invoca con el .nombreClase */
+
+
+/*  estilos a clase
+color, alineacion, y fondo de color del elemento, en este caso H2 */
+.tituloListas{
+
+    color:white;
+    text-align: center;
+    background-color: teal;
+
+}
+
+/* Selector de ID */
+
+/* cuando ponemos un identificador unico, a un elemento
+en HTML, lo llamamos con #idIdentificador */
+
+/* color de fono, color, padding ( espacio) y estilo de 
+letra */
+#idArticle{
+    background-color: #e3104f;
+    color:white;
+    padding: 20px 30px;
+    font-family: cursive;
+}
+
+
+/* selectores combinadores */
+
+/* combinan mas de un selector (padre-hijo) */
+/*  dicho de otra manera, me cambia los h2 que estasn en la clase secciones nada mas */
+
+.secciones h2{
+    color:crimson
+}
+
+
+/*  modifica las listas que estan en UL  */
+ul li{
+    font-size: 20px;
+    list-style: georgian;
+}
+
+
+/*  COMBINADORES DE HIJOS DIRECTOS */
+
+/* tiene que ver con la relacion de hijo a padre, o hijo a abuelo */
+
+.secciones > ul{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+
+

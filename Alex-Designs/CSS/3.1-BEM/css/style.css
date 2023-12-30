@@ -1,0 +1,25 @@
+/* Estilo del bloque (article) */
+.block {
+    border: 2px solid #333;
+    padding: 20px;
+}
+
+/* Estilo del elemento dentro del bloque (p) */
+.block__element {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+/* Modificador que altera un elemento específico dentro del bloque */
+.block__element--special {
+    color: red;
+    font-weight: bold;
+}
+/*
+- **Bloque (Block):** El artículo (`<article>`) representa el bloque principal con la clase `.block`. En el CSS, le hemos dado un borde y un relleno para resaltar visualmente el bloque.
+
+- **Elemento (Element):** Los párrafos (`<p>`) dentro del artículo son elementos dentro del bloque. Se les asigna la clase `.block__element` y se les da un color azul en el CSS.
+
+- **Modificador (Modifier):** El tercer párrafo tiene la clase adicional `.block__element--special`, que actúa como un modificador para alterar su estilo. En este caso, lo hacemos de color rojo y negrita.
+
+*/

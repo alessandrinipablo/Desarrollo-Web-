@@ -1,0 +1,88 @@
+
+/* Estilo es cascada */
+
+/* REGLAS CASCADA Y ESPECIFICIDAD */
+
+/* CASCADA, ES LA MANERA DE COMO SE APLICAN LOS ESTILOS
+*/
+
+
+
+/* cascada significa que los estilos
+se aplican de arribaa a abjo
+Aplica a nivel, SOLO de selectores y propiedades */
+
+
+/* ESPECIFICIDAD NO APLICA CASCADA */
+
+
+/*
+Especificidad 1
+-Selector de tipo.
+-Pseudoelemento.
+
+Especificidad 10
+
+Selector de clase
+Selector de atributo
+Pseudoclase
+
+
+Especificidad 100
+Selector de ID
+
+Rompes las especificidad con !important 
+
+
+*/
+
+/* pasando en limpio asi quedaria la especifcidad */
+
+
+/* 
+h1{
+    color:seagreen;
+    background-color: violet;
+    }
+    .titulo{
+    color:#fafafa;
+    }
+
+    h1{
+    color: #d11e1e;
+}
+
+#titulo{
+    color:blue;
+    } */
+
+/*  Herencia */
+    /*  los valores de los padres se los pasan a
+    los hijos , no al reves */
+
+    body{
+        font-family:serif;
+        background-color:blue ;
+    }
+
+    /* hay propoedad que no se heredan tener cuidado. */
+    /* se lo fuereza con inherit */
+        .container{
+            color: green;
+            font-family: Arial;
+            border: 2px solid green;
+            padding: 10px;
+        }
+        
+        p{
+            color:black;
+            border: inherit;
+            padding: inherit;
+            color: inherit;
+        }
+        h1{
+            background-color: aquamarine;
+            text-align: center;
+            text-transform: uppercase;
+        }
+

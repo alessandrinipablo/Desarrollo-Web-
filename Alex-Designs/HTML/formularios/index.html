@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios-html</title>
+</head>
+<body>
+    
+        <h1>Aplica al Trabajo</h1>
+
+        <!-- Formularios -->
+
+        <!--  atributo Action determina donde se va a mandar la informacion 
+        que carga el usuario -->
+        <!--  dentro de form van imputs -->
+        <!-- <form action=""></form> -->
+
+
+        <form >
+            <!-- Input entradas de datos -->
+
+            <!-- tipo texto -->
+            <!-- tiene  atributos
+            type que tipo de dato ingresa
+             id identificador unnico
+            value-->
+        <!--  el name en el input, es el que relaciona con el label -->
+
+        <!-- Formulario para ingresar Nombre -->
+        <ul>
+            <li><label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required maxlength="15" minlength="3">
+            </li>
+        
+            <!-- formulario para ingresar apellido -->
+            <!--  lo que relaciona input con label es el id/for, osea deben ser iguales. -->
+            <li><label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="escribe tu email" required>
+            </li>
+            <li>
+                <!-- Menu Desplegable -->
+                <label for="ciudad">Elige tu cuidad</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="Elige Tu Ciudad" selected "></option>
+                    <option value="Cordoba">Cordoba</option>
+                    <option value="Rio Cuarto">Rio Cuarto</option>
+                    <option value="Arias">Arias</option>
+                </select>
+            </li>
+            <li><label for="comentario">Deja tu comentario</label>
+                <br>
+                <textarea name="comentario" id="comentario" cols="15" rows="5"></textarea>
+            </li>
+            <li>
+                <label for="contraseña">Ingresa tu contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu Password" required>
+            </li>
+            <li>
+                <input type="range">Rango
+                </input>
+            </li>
+
+            <li>
+                <!-- Acepta los terminos -->
+                <label>                    
+                   <input type="checkbox">Acepta Terminos?
+                </label>
+            </li>
+            <li><button type="submit">Enviar</button></li>
+            <li><button type="reset">Resetear</button></li>
+            <li><button type="menu">Menu</button></li>
+            <li><button type="">Menu</button></li>
+
+
+
+
+        
+        </ul>
+
+        </form>
+</body>
+</html>

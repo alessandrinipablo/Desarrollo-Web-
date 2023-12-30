@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="inteligencia artificial, agricultura de precisión, tecnología agrícola, análisis de datos, agrotecnología">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title> Contacto - AgroServicios Inteligentes</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>AgroServicios Inteligentes</h1>
+        <nav id="navegador">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./analisisDeDatos.html">Análisis de Datos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./iaAgro.html">IA en Agricultura</a></li>
+                <li><a href="./noticias.html">Noticias del Agro</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="https://www.google.com.ar/" target="_blank">Ir a Google</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto:</h1>
+        <!-- Formulario de Contacto -->
+        <br>
+        <p>A continuacion dejanos tus datos y a la brevedad nos contactaremos contigo
+
+        </p>
+        <br>
+        <form>
+            <ul>
+
+                <li> <label for="nombre"><strong>Nombre:</strong></label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu Nombre ">
+                </li>
+
+                <li> <label for="apellido"><strong>Apellido:</strong></label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Escribe tu Apellido">
+                </li>
+                <li>
+                    <label for="fechaNacimiento"><strong>Fecha de Nacimiento:</strong></label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required placeholder="dd/mm/aaaa"
+                        max="2023-12-31">
+                </li>
+                <li>
+                    <label for="Numero de Celular"><strong>Telefono:</strong></label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="3586023491" </li>
+                <li> <label for="email"><strong>Correo Electrónico:</strong></label>
+                    <input type="email" id="email" name="email" required placeholder="email@email.com">
+                </li>
+                <li>
+                    <label for="motivo"><strong>Motivo de Contacto:</strong></label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected><strong>Seleccione un motivo</strong></option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Comentario">Comentario</option>
+                        <option value="Soporte">Soporte</option>
+                    </select>
+                </li>
+                <li><label for="mensaje"><strong>Mensaje:</strong></label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required>
+                    <label for="aceptoTerminos"><strong>Acepto los términos y condiciones</strong></label>
+                </li>
+                <li>
+                    <input type="reset" value="Limpiar Formulario">
+                    <input type="submit" value="Enviar Mensaje">
+                </li>
+
+            </ul>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p> &copy; 2023 AgroServicios Inteligentes </p>
+        <img src="../img/instagram.ico" title=" Instagram " alt="Instagram">
+        <img src="../img/linkedin.ico" title=" Linkedin " alt="Linkedin">
+        <img src="../img/twitter.ico" title=" Twitter " alt="Twitter">
+        <img src="../img/youtube.ico" title=" Youtube " alt="Youtube">
+        <p><a href="#navegador"><strong>Ir a Inicio</strong></a></p>
+    </footer>
+</body>
+
+</html>

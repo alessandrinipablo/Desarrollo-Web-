@@ -1,0 +1,159 @@
+/*RESETEO GENERAL DE ESTILO*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*  Diseño Responsive*/
+/*El proyecto se deber ver bien en cualqueir ancho de pantalla*/
+
+.titulosMedias{
+    color: blueviolet;
+}
+
+.parrafoMedias{
+    color: blue;
+}
+
+
+/*Medias Queries, me permite moficar el estilo dependiendo el ancho de la pantalla
+el scroll(alto) no me interesa.*/
+
+/*segun la cantidad de pixeles*/
+/*0 A 500*/
+@media (max-width: 500px){
+    .titulosMedias{
+        color: pink;
+    }    
+    .parrafoMedias{
+        color: brown;
+    }
+}
+
+/*501px hasta 900px*/
+
+@media (min-width: 501px) and (max-width: 900px){
+    .titulosMedias{
+        font-size: 40px;
+
+    }    
+    .parrafoMedias{
+        font-size: 30px;
+        text-align: center;
+        /* display: none; */
+    }
+}
+
+/*si queresmos imprimir tenemos una opcion*/
+/*LO PASA A COLOR NEGRO POR LA TINTA
+*/
+
+@media print and(min-width:300px){
+    .titulosMedias{
+        color: black;
+    }
+}
+
+
+/*cONFIGURAR ESTILOS DEPENDIENDO LA ORIENTACION DE LA PANTALLA*/
+
+@media screen  and (orientation: landscape){
+    /*estilos para pantallas en modo horizontal*/
+    .titulosMedias{
+        text-transform: uppercase;
+    }
+    
+}
+
+
+/*Mobile First*/
+/*Se trabaja desde la pantalla mas chica y se crece en tamáño.*/
+/*en gral se trabaja en una sola columna*/
+/*se tiene los elementos*/
+/*se deja la informacion mas importante*/
+
+body{
+    text-align: center;
+}
+
+header{
+    background-color: #808000;
+    grid-area: header;
+
+}
+
+nav{
+    background-color: #008080;
+    grid-area: nav;
+}
+
+main{
+    background-color: #c0c0c0;
+    grid-area: main;
+    height: 300px;
+}
+
+
+.primerSeccion{
+    background-color: #808080;
+    grid-area: sectionA;
+    height: 200px;
+}
+
+.segundaSeccion{
+    background-color: #ff0000;
+    grid-area: sectionB;
+    height: 200px;
+}
+
+aside{
+    background-color: #273c2c;
+    grid-area: publi;
+
+}
+
+
+footer{
+    background-color: #ffff00;
+    grid-area: footer;
+    height: 200px;
+}
+
+/*Version tablet 768px */
+
+
+@media (min-width: 768px){
+    /*maquetamos en dos columnas*/
+
+    .gridPadre{
+        /*activo grid, y creo la grilla*/
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "nav sectionA "
+        "nav sectionB "
+        "publi main"   
+        "footer footer" 
+        ;
+    }
+}
+
+/*Version Escritorio 1024px */
+/*tres columnas*/
+
+@media (min-width: 1024px){
+    .gridPadre{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav main "
+    "publi sectionA sectionB"
+    "footer  footer footer" 
+    ;
+    }
+}
+
+

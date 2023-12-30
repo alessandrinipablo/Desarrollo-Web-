@@ -1,0 +1,111 @@
+/* Reset de estilos y configuración global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header, main, footer {
+    border: 2px solid #cecaca; 
+    margin: 10px;
+}
+
+/* ESTILOS DE BODY */
+body {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+    background-color: #f3f0f0;
+    color: #333;
+}
+
+/* Encabezado */
+
+header {
+    background-image: url('../img/img_nav.jpg'); 
+    background-size: cover;
+    background-position: center center; 
+    color: #fff;
+    text-align: center;
+    padding: 3px 0; 
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color:#333;
+
+}
+
+nav {
+    margin-top: 2rem;
+
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline-block;  
+    margin-right: 15px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Secciones */
+section ul li {
+    padding: 2rem;
+    text-align:justify;
+
+}
+
+
+section h2 {
+    color: #022012;
+}
+
+.imagenesIndex{
+    width: 670px;
+    height: 347px;
+}
+
+/* Pie de Página */
+
+footer {
+    background-image: url('../img/img-footer.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    color: #fff; 
+    text-align: center;
+    padding: 3px ; 
+
+    bottom: 0;
+    width: 1330px   ;
+
+}
+/* Enlace en el Pie de Página */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo para enlaces */
+a {
+    color: #006837;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+a:hover {
+    color: #004012;
+}

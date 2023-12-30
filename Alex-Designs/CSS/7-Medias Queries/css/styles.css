@@ -1,0 +1,22 @@
+
+
+body{
+    background-color: rgb(160, 160, 158);
+}
+
+
+.padre{
+    background-color: aqua;
+    width: 80%;
+    padding: 20px 25px;
+    border: 1px solid black;
+    margin: 10px 20px;
+    margin: 25px;
+}
+.hijos{
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    display: inline-block;
+    ;
+}

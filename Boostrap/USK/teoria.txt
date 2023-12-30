@@ -1,0 +1,11 @@
+* Boostrap es una Libreria del estilo css, cuyo principal caracteristica es hacer sitios responsive.
+* CDN (CON CONEXION A INTERNET) 
+*Boostrap Divide el contenido en 12 secciones.
+
+tamano de las pantallas
+sm --> small
+md --> medium
+lg --> large
+xl --> extra large
+
+.row--> me crea un div con clase row

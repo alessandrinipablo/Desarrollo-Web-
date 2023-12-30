@@ -1,0 +1,91 @@
+.primeraOpcion {
+    /* Establece el tamaño de la fuente a 60 píxeles */
+    font-size: 60px;
+}
+
+.segundaOpcion {
+    /* Establece el color del texto a cadetblue */
+    color: cadetblue;
+}
+
+.usoDisplay {
+    /* Convierte la etiqueta span en un bloque */
+    display: block;
+}
+
+.transformamosInline {
+    /* Convierte la etiqueta en línea */
+    display: inline;
+}
+
+/***** BOX MODELING *****/
+
+.contenedor {
+    background-color: pink;
+
+    /* Establece un borde sólido negro de 8 píxeles con esquinas redondeadas */
+    /** border recibe tres valores, ancho estilo y color*/
+    border: 08px solid black;
+    border-radius: 15px;
+
+    /* Establece márgenes superior, derecho, inferior e izquierdo */
+    margin: 60px 30px;
+    
+    /* Establece el relleno superior, derecho, inferior e izquierdo */
+    padding: 30px 60px;
+}
+
+/* POSITION */
+
+.cajaPrincipal {
+    background-color: bisque;
+    border: 2px black solid;
+    /* Establece la altura de la caja principal en 620 píxeles */
+    height: 620px;
+
+    /* Establece la posición relativa */
+    position: relative;
+}
+
+.caja {
+    background-color: gray;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+/* Position Relative */
+
+.itemUno {
+    /* Establece la posición relativa con un desplazamiento hacia arriba y hacia la izquierda */
+    position: relative;
+    top: 50px;
+    left: 80px;
+}
+
+/* Position Absolute */
+
+.itemDos {
+    /* Establece la posición absoluta en la esquina inferior derecha */
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+
+/* Position Fixed */
+
+.itemTres {
+    /* Establece la posición fija en la esquina inferior derecha de la ventana */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Position Sticky */
+
+.itemCuatro {
+    /* Establece la posición pegajosa en la parte superior de la ventana cuando se desplaza */
+    position: sticky;
+    top: 0;
+}

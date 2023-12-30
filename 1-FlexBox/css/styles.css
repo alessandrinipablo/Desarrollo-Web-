@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: aliceblue;
+    font-family: 'Arial';
+}
+
+/*  estilo  a contenedor padre */
+/* Propiedades aplicadas */
+/* witdh ocupa el 90%
+    max witdh y min  ancho
+    margin 800px y auto ( espacio de afuera
+    tamano de fuente, alineacion  y borde
+ */
+
+/* Flex */
+/* desde el contenedor padre activo flex-->display flex*/
+
+.contenedor{
+    width: 90%;
+    max-width: 800px;
+    min-height: 600px;
+    margin: 80px auto;
+    border: 3px solid black;
+    display: flex;
+    flex-direction:row;
+    /*predeterminado viene en row (fila), se puede poner en reverso
+    ordena del primero al ultimo
+    y tambien se puede poner en columnas, con flex columns*/
+    justify-content:space-between;
+    align-items:flex-start;
+    align-self:flex-start;
+    align-content: center;
+
+
+}
+
+/* estilos a los hijos */
+
+.hijo{
+    color:#fff;
+    font-size: 2rem;
+    text-align:center;
+    width: 100px;
+    height: 100px;
+}
+
+.hijo1{
+    background-color: crimson;
+    }
+
+
+.hijo2{
+    background-color: purple;
+}
+
+.hijo3{
+    background-color: steelblue;
+}
+

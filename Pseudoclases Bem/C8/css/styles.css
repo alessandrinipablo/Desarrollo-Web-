@@ -1,0 +1,260 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+
+/*Pseudoclases*/
+
+/*
+Es una palabra clave que se utilizar para seleccionar y 
+aplicar estilos a elementos en funcion de su estado o posicion
+en el documento
+*/
+
+
+/*para que cambie cuando le paso el mouse*/
+.parrafoConHover{
+    color: red;
+    font-size: 20px;
+}
+
+/*para que cambie cuando le paso el mouse*/
+
+.parrafoConHover:hover{
+    color:blue;
+    font-size: 30px;
+
+}
+
+/* ejemplo con boton */
+
+.btnHover{
+    padding: 10px 20px;
+    border-radius: 08px;
+    color: #fafafa;
+    background-color: #F51A17;
+    border: none;
+
+}
+
+.btnHover:hover{
+    background-color: #d83d3a;
+    transition: all 0.3s;
+}
+
+
+/*Selecciono el primer Hijo*/
+/*First CHild*/
+
+/*llamo a la etiqueta contender y al primer hijo*/
+
+.contenedor p:first-child{
+    color:aqua;
+}
+
+/*elijo el ultimo hijo  */
+.contenedor p:last-child{
+    color:blueviolet;
+}
+
+
+/* elegir determinado hijo  */
+/* nth -child */
+
+.contenedor p:nth-child(2){
+    color:#045785;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* usando el not, aplicar estuulos menos a uno */
+.contenedor p:not(.curso){
+    font-style: italic;
+}
+
+/*TRATAR LOS LINKS*/
+
+
+/* LINK Y VISITED */
+/*cambio el color y las mayusculas*/
+a:link{
+    color: red;
+    text-transform: lowercase;
+}
+
+/*cuando sea visitado cambio el color de link, y pongo en 
+capitalize*/
+a:visited{
+    color: green;
+    text-transform: capitalize;
+}
+
+/* cambio el color cuando hago click en un boton */
+.btnActive:active{
+    background-color: yellowgreen;
+}
+
+/* cuando el usuario esta listo para escribir hace click en el  */
+/* formulario y cambia el color de fondo */
+input:focus{
+    background-color: aquamarine;
+}
+
+
+/*PSEUDOELEMENTOS*/
+
+/* PERMITE AGREGAR ESTILOS A PARTES ESPEFICAS DE UNA ELEMENTO */
+/* cuando trabajo con pseuelementos van dos dos puntos. */
+
+
+/*cambio la primera letra*/
+.ps::first-letter{
+    text-transform: lowercase;
+    color: red;
+}
+
+
+/*agregar contenedio previo*/
+.ps::before{
+    content: " Hoy vemos ";
+}
+
+.ps::after{
+    content: " y  Pseudoclase ";
+}
+
+/*unidades de medida*/
+
+.cajita{
+    background-color: #F51A17;
+    width: 50vw;
+    height:50vw;
+}
+
+
+/*Los px miden iguales en cualquier dispositivos*/
+
+/*unidades de medidas absolutas --> px (mide los mismo en cualquier dispositvo)*/
+/*unidades de medidas relativas --> % (ocupa el porcentual en relacion a su contenedor padre) */
+
+/*viewport witdh
+es como el porcentaje pero la relacion es a la pantalla*/
+
+
+/* textos */
+/*el rem es una unidad de medida relativa*/
+
+.px{
+    font-size: 16px;
+}
+
+/*1rem equivale a 16px*/
+
+
+.rem{
+    font-size: 2rem;
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+
+
+/* METODOLOGIA BEM */
+
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.tarjeta__imagen{
+    width: 100%;
+
+}
+
+.tarjeta__titulo{
+    font-size: 2.5rem;
+    font-weight: black;
+    margin-bottom: 8px;
+    color:green;
+    
+} 
+
+.tarjeta__descripcion{
+margin-bottom: 16px;
+}
+
+.tarjeta__boton{
+    background-color: blue;
+    color:#fafafa;
+    border: none;
+    padding: 08px 16px;
+    cursor:pointer;
+    border-radius: 04px;
+}
+
+.tarjeta__boton:hover{
+    background-color: #0606d9;
+}
+
+/* modificadores clases para ir generando y aplicando y pisando cambios */
+/* si modifico bloque */
+/*  nombre del bloque -- nommbre del modificador*/
+
+.tarjeta--producto{
+    max-width: 400px;
+
+}
+
+/* si  quiero modificar elemento */
+/*nombre del bloque__ nombre del elemento -- nombre del modificador*/
+
+.tarjeta__titulo--color{
+    color:blue
+}
+
+
+/*CAJA CONTENEDORA*/
+
+/* overflow */
+
+/*corta lo que sobra */
+.cajaContenedora{
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    overflow:hidden;
+
+
+}
+
+.cajaContenedora p{
+    font-size: 40px;
+
+}
+
+
+/*Consejos
+1-Revisar los elementos que sobresalen o rompen el diseño
+2-Aplicar Overflow--> Hidden
+3-Aplicar al selecto universal border: 1px solid red*/
+
+
+/* Aplicar fuentes locales ( que bajamos por Google Fonts) */
+
+/*conecto donde esta la fuente*/
+@font-face {
+    font-family: Old London;
+    src: url("../fonts/OldLondon.ttf");
+}
+
+/*doy el estilo*/
+
+.fuenteNueva{
+    font-family: Old London;
+    font: size 50px;
+}

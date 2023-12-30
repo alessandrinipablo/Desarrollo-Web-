@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+
+
+}
+
+.cajaPadre{
+    width: 350px;
+    height: 850px;
+    background-color: antiquewhite;
+    margin: 50px;
+    padding: 20px;
+    top:10px;
+}
+
+
+.hijo{
+    width: 150px;
+    height: 75px;
+    background-color: aqua;
+    border: 1px solid floralwhite;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* cuando tiene la posicion fija, salen del padre */
+.fijo{
+    background-color: blue;
+    position: fixed;
+    top: 30px;
+    bottom: 250px;
+    left: 30px;
+    z-index: 10px;
+}
+
+.relativo{
+    background-color: red;
+    position: relative;
+    right: 60px;
+    /*z-index: -1;*/
+    top:20px
+}
+
+.absoluto{
+    background-color: greenyellow;
+    position: absolute;
+    top: 90px;
+    left: 40%;
+}
+
+/*
+relativa --> Para ajustar un poco la posición de un elemento sin afectar a los demás.
+absoluta --> Para poner un elemento exactamente donde quieras, ignorando a los demás.
+fixed    --> Útil para cosas como barras de navegación que siempre deben estar visibles.
+*/

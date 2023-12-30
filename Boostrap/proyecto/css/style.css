@@ -1,0 +1,52 @@
+
+/* estilos al logo */
+.imgLogo{
+    width: 75px;
+    border-radius: 03px;
+}
+
+.encabezado{
+    background-color: #fff;
+    border-top: 20px solid #c1101a;
+}
+.menuNav a{
+    text-transform: uppercase ;
+    font-size: 1.4rem;
+    border-left: 1px solid #c1101a;
+    border-right: 1px solid #c1101a;
+    padding: 0;
+}
+.menuNav a:hover{
+    background-color:#c23b41;
+    color:#fafafa; 
+}
+.estadios{
+    background-color: #c1101a;
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px;
+
+}
+
+.estadios h2 {
+    font-size: 3rem;
+}
+
+/*BOTONES*/
+
+.bntCompra{
+    background-color: #c1101a;
+    color:#fafafa;
+
+}
+
+.btnCompra:hover{
+    background-color: #c23b41;
+}
+
+
+/*Se puede dar estilo a las clases de Bt, pero no es recomendado*/
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Etiquetas Extra Para Imagenes.</title>
+</head>
+<body>
+    <h1>Etiquetas para imagenes</h1>
+
+
+    <!-- Etiqueta Figure representa contendio independiente
+    a menudo con un titulo, se trata de iamgaen, enmarca imagenes-
+    Elemento Bloque  -->
+    <figure>
+        <img src="assets/perrito.jpg" alt="PERRITO">
+        <!-- titutlo de la imagen, no es obligaotiria -->
+        <figcaption>Perrito Sonriendo</figcaption>
+    </figure>
+
+    <figure>
+        <img src="assets/perrito1.jpg" alt="Perrito">
+        <figcaption>Perrito Contento</figcaption>
+    </figure>
+    <figure>
+        <img src="assets/perrito2.jpg" alt="Perrito">
+        <figcaption>Perrito abrazado con Humando</figcaption>
+    </figure>
+
+    <picture>
+        <!-- Son medias Queries desde Html -->
+        <source srcset="./assets/perrito.jpg"  media="(min-width:900px)">
+        <source srcset="./assets/perrito1.jpg" media="(min-width:500px)">
+        <img src="./assets/perrito2.jpg" alt="">
+    </picture>
+    
+</body>
+</html>

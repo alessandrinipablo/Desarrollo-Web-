@@ -1,0 +1,35 @@
+/* reinicia los parametros de css */
+/* fondo, color de letra, y margen de abajo */
+/* margen de arriba, fondo, y color de letra. */
+/*  LOS COLAPSOS DE MARGENES SE DAN CUANDO LOS MISMOS
+SE SUPERPONEN. */
+/* SE LLAMAN COLAPSOS DE MARGENES ADYACENTES, SOLO SUCEDE EN LOS MARGENES */
+/* VERTICALES. */
+/* SIEMPRE PREDOMINA EL MAS GRANDE */
+/*  se pueden usar los margenes automaticos solo de manera horizontal */
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial;
+}
+
+.main{
+    background-color: steelblue;
+    color: white;
+    /* margin-bottom: 130px; */
+    /* margin-bottom: 10px; */
+    /* border: 1px solid transparent; */
+}
+
+.main-title{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.footer{
+    /* margin-top: 50px; */
+    background-color: slateblue;
+    color: white;
+}

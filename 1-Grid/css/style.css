@@ -1,0 +1,142 @@
+/*Grid I*/
+/*Aplicamos estilos a las cajitas*/
+
+/*Clase Item (cada cajita)*/
+/*color de fondo y borde*/
+.item{
+    background-color: #87cefa;
+    border: 1px solid black;
+    border-radius: 3px;
+
+}
+
+/*estilo a la clase parrafo pero solo del selector item*/
+
+.item p{
+    font-size: 15px;
+    font-weight: bold;
+    text-align:center;
+    text-transform: uppercase;
+
+}
+
+/*activo grid*/
+
+/*desde el colector padre*/
+/*se puede hacer de dos manera grid
+marcando cantidad de filas y columnas que va a tener el diseño*/
+/*o con grid area( le doy un apodo a cada area y le digo como 
+se acomoden*/
+/*activo grid*/
+/*2do- le digo cuantas columnas va a tener
+segun la cantidad de valores que pase, seran la cantidad de columnas*/
+/*para crear las columnas se pueden poner en: px, 1fr, % */
+/*la funcion repeat se le pasa la cantidad de y la unicdad*/
+
+
+.gridPadre{
+    display:grid; /*activo grid*/
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 200px 200px 200px;  /*tamaño de la fila*/
+    gap: 10px; /*espacio entre filas y columnas*/
+    /* row-gap: 2px; esto si lo hago por separado el gap solo es para los dos iguales
+    column-gap: 5px; */
+
+/*Estilos para los hijos*/
+/*justify items distribuye los elementos en el eje h*/
+/*align item distribuye sobre el eje vertical*/
+
+
+    justify-items: center;
+    align-items: center;
+  
+}
+/*Aplicado desde un hijo que es distinto*/
+/*Primero Eje horizontal*/
+/*Segundo Eje Vertical*/
+.rebelde{
+    justify-self: start;
+    align-self: self-start;
+}
+
+
+/*GRID AREAS*/
+/*En cada estilo llamo a grid area, y le ponogo un nombre
+puede ser cualquiera, pero se sugiere poner el nombre del selector*/
+
+header{
+    background-color: azure;
+    grid-area: header;
+
+}
+
+nav{
+    background-color: blanchedalmond;
+    grid-area: nav;
+
+}
+
+.sectionA{
+    background-color: bisque;
+    grid-area: sectionA;
+    /*agrego flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*Tambien box-modelling*/
+    padding: 10px;
+
+
+}
+
+.sectionB{
+    background-color: aquamarine;
+    grid-area: sectionB;
+}
+
+aside{
+    background-color: blueviolet;
+    grid-area: aside;
+}
+
+footer{
+    background-color: red;
+    grid-area: footer;
+}
+
+/*ARMO EL GRID AREA, QUE EN ESTE CASO SERIA EL BODY*/
+
+   /*ACTIVO GRIDS*/
+   /*GRID TEMPLATES AREAS, Y LLAMO A LOS NOMBRES QUE LE DI ANTES*/ 
+   /*Coloco los nombres que le di antes como quiero que aparezca en la pagina*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:  
+    " footer footer footer"
+    " sectionA sectionB aside"
+    " nav nav header";
+    padding: 10px;
+}
+
+/*REGLAS*/
+/*Siempre tiene que ser entodas las filas la misma cantidad de columnas*/
+/*el nombramiento de los nombres tiene que ser si es necesiario en filas consecutivas, no en filas alternas*/
+/*Tienen que estar todos nombrados*/
+/*El diseño no puede estar en el, osea, si usamos dos filas consecutivas, en la fila 1 nombre una vez
+en la fila dos lo nombro una vez, no dos, */  
+.gatito{
+    width: 150px;
+    bottom: 20px;
+    right: 20px;
+}
+
+
+.logo{
+    position:fixed;
+    width: 150px;
+    bottom: 20px;
+    right:20px;
+}

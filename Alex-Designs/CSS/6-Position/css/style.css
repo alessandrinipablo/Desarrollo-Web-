@@ -1,0 +1,101 @@
+/* reinicio margenes y bordes */
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    min-height: 300vh;
+
+}
+
+
+/* propiedads aplicadas
+margenes, ancho, relleno, fonodo de color, y posicion relativs */
+.padre{
+    margin: 30px auto;
+    width: 800px;
+    height: auto;
+    padding: 1rem;
+    background-color: indigo;
+    position: relative;
+}
+
+
+/* Propiedad */
+/*  ancho alto fondo de color 
+margenes, tamaño de fuente, romper si el elemtno supera el padre, alimneacion color y padding */
+.hijo{
+    width:100px;
+    height:100px;
+    background-color: tomato;
+    margin-bottom:20px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    text-align: center;
+    color: #fff;
+    padding-top: 1rem;
+
+}
+
+
+.relativo{
+    position: relative;
+
+}
+
+.hijo{
+    width:100px;
+    height:100px;
+    background-color: tomato;
+    margin-bottom:20px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    text-align: center;
+    color: #fff;
+    padding-top: 1rem;
+
+}
+
+/*  activando la propiedad, activa las 4 siguientes, siempre respetando si elememnto
+padre */
+.relativo{
+    position: relative;
+    /* top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px; */
+
+}
+
+
+/*  la posicion absoluta, no respeta el */
+.Absoluto {
+    background-color: slateblue;  /* Color de fondo */
+    position: absolute;             /* Establece la posición absoluta */
+    /*top: 0;    */                    /*Posiciona en la parte superior del contenedor relativo
+    left: 60px;                    /* Posiciona a 60 píxeles desde el lado izquierdo del contenedor relativo */
+    /*z-index: 20;                   /* Índice de apilamiento */
+}
+
+
+/* posicion fija, que fija en el navegador */
+.Fijo {
+    background-color: crimson;  /* Color de fondo */
+    position: fixed;           /* Establece la posición fija */
+    top: 60px;                 /* Posiciona en la parte superior de la ventana de visualización */
+    z-index: 10;               /* Índice de apilamiento */
+}
+
+
+
+
+.Fijo{
+    background-color: crimson;
+    position: fixed;
+    top: 60px;
+    z-index: 10;
+}
+
