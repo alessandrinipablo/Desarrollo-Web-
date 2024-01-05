@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-imagenes{
+    width: 90%;
+    height: auto;
+    display:grid;
+    border: 1px solid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 16px;
+    border-radius: 8px; 
+}
+
+.contenedor-imagenes img {   
+    border-radius: 8px; 
+    width: 100%;
+    height: auto; }
+
+/*  el auto fill, auto-fill tratará de llenar el contenedor con fotos
+    el auto fil --> auto-fit, la cuadrícula ajustará automáticamente el tamaño de las fotos para llenar el espacio disponible. */

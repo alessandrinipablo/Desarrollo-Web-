@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz--box-sizing:border-box;
+    box-sizing: border-box; */
+}
+
+/* estilos al body */
+
+body{
+    background: #ddd;
+}
+
+/*  estilos al contenedor */
+
+.contenedor{
+    background: lightsalmon;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    display: grid; 
+    grid-template-columns: minmax(100px,1fr) 1fr 1fr    ; 
+    grid-auto-rows: 50px;
+    gap: 4px;
+
+}
+
+/*  estilos a los hijos del contenedor */
+.contenedor div{
+    background:lightblue;
+    border: 2px solid #09f;
+    border-radius: 6px;
+}
+
+
+.contenedor div:first-child{
+    background: lightgreen;
+    border: 2px solid green;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.contenedor div:nth-child(2){
+    background: lightseagreen;
+    border: 2px solid blue;
+    grid-column: 1/-1;
+}
+
+
+
+
+/*
+***********************************************************************
+*******************************PROPIEDADES*****************************
+***********************************************************************
+*/
+
+/*Definiendo columnmas con +
+*- display: grid; --> activa la grilla 
+*-grid-templates columns --> declarar cuantas columnas voy a generar y que unidades le voy a pasar 
+                Ejemplo -->  se pueden definir con pixeles --> 100px
+                        -->  con porcentajes -->  50% 
+                        -->  con fracion  --> 1fr 2fr
+                        -->  de forma -->auto auto(segun navegador y contenido del elemento) con  identificadores.
+                        -->  con vh --> 10vh
+                        -->  con vm --> 1vm (va en relacion con la altura de la ventana) mezlando todas las      unidades.
+                        --> otra forma es usando la funcion repeat(3, 1fr) --> seria lo mismo que 
+                        1fr 1fr 1fr.( tambien se puede combinar con las unidades).
+                        --> al repeat se le pueden dar patrones ejemplo --> repeat(3, 25px 50px)
+                            va a repetir 3 veces el patron 25 px 50px 
+Se le pueden dar minimos y maximos a las columnas y tambien a las filas.
+minmax(parametro minimo , parametro maximo).
+
+
+*-grid-template-rows --> igual que defino las columnas puedo hacerlo con filas.                        
+*-      grid-auto-rows: 50px; --> para las filas restantes darle automaticamente medidas
+*-      grid-auto-flow: row;  --> como organizo la grilla, por filas o columna, enntre los mas imporbntes.
+/*
+
+grid   grid-column-start: 2; le podemos indicar desde que linea a que linea van a ir los hijos del contenedor
+                             esto sirve mucho para maquetar el sitio.
+        grid-column-end: 4
+/*
+.item {
+  grid-column-start: 2; /* Comienza en la segunda línea de la cuadrícula de columnas 
+  grid-column-end: 4;   /* Termina en la cuarta línea de la cuadrícula de columnas 
+  .item {
+  grid-column: 2 / 4;  /* Comienza en la segunda línea y termina en la cuarta línea 
+
+
+
+
+*/
+

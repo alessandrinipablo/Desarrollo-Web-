@@ -1,0 +1,42 @@
+body {
+  background-color: blue;
+}
+
+.contenedor {
+  background-color: antiquewhite;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 150px 400px;
+  grid-gap: 20px;
+}
+
+/* Propiedades */
+
+/* Desde el contenedor Padre, se escribe display grid, y se activa el sistema de GRIDS */
+
+/* 1-grid-template-columns --> Define el número y el tamaño de las columnas de la cuadrícula.
+-->  El tamaño se puede poner en --> pixeles,  20px 30px 40px
+--> en porcentajes  50% 30% 20%
+--> en fracciones  1fr 2fr
+--> auto auto ( va aser automatico respecto a la variacion de su contenido
+--> Puede usarse medidas combinadas            
+
+2-grid-template-rows: Define el número y el tamaño de las filas de la cuadrícula.
+-->  se puede definir igual que las columnas.
+
+3-grid-gap: Define el espacio entre las filas y las columnas de la cuadrícula.
+
+grid-template-rows: Define el número y el tamaño de las filas de la cuadrícula.
+grid-column: Especifica dónde debe comenzar y terminar un elemento a lo largo del eje de las columnas.
+grid-row: Especifica dónde debe comenzar y terminar un elemento a lo largo del eje de las filas.
+grid-area: Especifica en qué área de la cuadrícula debe colocarse un elemento.
+justify-items: Alinea los elementos de la cuadrícula a lo largo del eje de las columnas.
+align-items: Alinea los elementos de la cuadrícula a lo largo del eje de las filas.
+justify-content: Alinea las filas de la cuadrícula a lo largo del eje de las columnas.
+align-content: Alinea las columnas de la cuadrícula a lo largo del eje de las filas.
+grid-auto-columns: Especifica el tamaño predeterminado de las columnas en una cuadrícula implícita.
+grid-auto-rows: Especifica el tamaño predeterminado de las filas en una cuadrícula implícita.
+grid-auto-flow: Especifica cómo se d*/

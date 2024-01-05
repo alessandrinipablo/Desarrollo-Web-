@@ -1,0 +1,40 @@
+flex permite trabajar en filas o columnas  (una sola dimension)
+grid permite trabajar en filas y columnas  (dos dimensiones)
+
+/* Propiedades del Contenedor de la Cuadrícula (Grid Container) */
+
+1. display: grid; // Activa el modelo de cuadrícula.
+
+2. grid-template-columns: [valor]; // Define las columnas de la cuadrícula.
+
+3. grid-template-rows: [valor]; // Define las filas de la cuadrícula.
+
+4. grid-template-areas: [valor]; // Define áreas nombradas en la cuadrícula.
+
+5. gap: [valor]; // Establece el espacio entre filas y columnas.
+
+6. justify-items: [valor]; // Alinea los elementos a lo largo del eje de las columnas.
+
+7. align-items: [valor]; // Alinea los elementos a lo largo del eje de las filas.
+
+8. place-items: [align-items] [justify-items]; // Simplifica la alineación de elementos.
+
+9. justify-content: [valor]; // Alinea la cuadrícula a lo largo del eje de las columnas.
+
+10. align-content: [valor]; // Alinea la cuadrícula a lo largo del eje de las filas.
+
+11. place-content: [align-content] [justify-content]; // Simplifica la alineación de la cuadrícula.
+
+/* Propiedades de los Ítems de la Cuadrícula (Grid Items) */
+
+12. grid-column: [valor]; // Especifica en qué columna comienza y termina un ítem.
+
+13. grid-row: [valor]; // Especifica en qué fila comienza y termina un ítem.
+
+14. grid-area: [valor]; // Asigna un ítem a un área definida en la cuadrícula.
+
+15. justify-self: [valor]; // Alinea un ítem a lo largo del eje de las columnas.
+
+16. align-self: [valor]; // Alinea un ítem a lo largo del eje de las filas.
+
+17. place-self: [align-self] [justify-self]; // Simplifica la alineación de un ítem.

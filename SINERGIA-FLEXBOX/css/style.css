@@ -1,0 +1,173 @@
+
+/*body para que no tenga
+ margen
+ relleno predeterminado 
+ y establece el modelo de caja en border-box*/
+body{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* le doy color de fondo y letras */
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ANCHO DEL 80% DEL TAMAÑO */
+/*ANCHO MAXIMO DE 700PX*/
+/* COLOR DE FONDO */
+/*CMENTDADO EL ALTO     500PX*/
+
+.contenedorPadre{
+    width: 80%;
+    height: 500px; 
+    max-width: 795px;
+    background-color: #212d40;
+    display: flex; /*Habilito Flex*/
+    flex-direction: row;  /*Por defecto  esta en row (filas), puede ser en row-reverse, column, o colum-reverser*/
+    flex-wrap:wrap;  /* Propiedad que si los hijos superan al ancho, pasan a la siguiente fila*/
+   /*flex-flow: row wrap; Abrevia las propiedads FLEX DIRECTION Y FLEX FLOW*/
+   /*justify-content:space-around;*/ /*Propiedad que organiza los elementos horizontalmente*/
+   /*align-items: center;*/  /*Alinea los elementos sobre el eje vertical*/
+  /* align-content:center;*/ /*Esta propiedad es igual a align items, nada mas que cuando se usa cuando son varias colu,mnas*/
+}
+
+.hijos{
+    width: 100px;
+    height: 100px;
+    background-color: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #fff;
+    /* order:2; */
+    /*flex-grow: 1; *//*cuanto crece un elemento*/
+}
+
+/*
+.tres{
+    order:1;  Propieda que cambia el orden de los elementos hijos, tambien se tiene que cambiar el orden de
+                del hijo mayor.
+}
+*/
+/*
+.uno{
+    flex-grow: 1;  /*aca se agranda la caja uno, toma todos los espacios sobrabtes.
+    
+}*/
+
+/*
+.dos{
+    flex-shrink: 0;
+}
+
+/*
+----------------------------------------------------------------------------
+-----------------Propiedas que se aplican al padre--------------------------
+----------------------------------------------------------------------------
+
+*/
+/* Display: Flex --> habilita el sistema flex ( cajas Flexibles)
+
+Flex Direction -->  organiza como van estar los contenedores
+
+row --> organiza por filas
+row-reverse --> organiza por filas , pero de manera decreciente
+column --> organiza por columnas
+column -reverse --> organiza por columnas de manera decreciente 
+
+----
+Flex*Wrap --> propiedad que ajusta o no a los elementos si superan el ancho del padre
+
+nowrap -- > los elementos se colocan en una sola fila, si sobresalen, se achican de tamaño
+wrap --> los elementos se colocan en una sola fila, si sobresalen, pasan a la siguiente fila.
+-----
+
+FLEX- FLOW --> agrupa flex direction con flex wrap, se le pasa el parametro porque agrupa (row or columns) y 
+                que hace cuando los elemetos superan al contenedor (wrap or nowrap).
+
+
+------
+
+Justifique content  --> organiza los elementos (hijos) horizontalmente.
+
+Propiedades posibles.
+
+Baseline --> Alinea los elementos a la línea de base del contenedor
+Center --> organiza los hijos en el centro del padre.
+End --> Alinea los elementos hacia el extremo derecho del contenedor.
+First Baseline --> first baseline: Alinea los elementos a la primera línea de base del contenedor.
+Flex-End -->  Alinea los elementos hacia el extremo derecho del contenedor
+last baseline -->
+left -->Alinea los elementos hacia el extremo izquierdo del contenedor.
+right -->Alinea los elementos hacia el extremo izquierdo del contenedor.
+safe -->Utiliza start o end según la dirección de escritura
+space around -->Distribuye el espacio sobrante alrededor de los elementos
+space between -->Distribuye el espacio sobrante alrededor de los elementos
+
+------
+
+Algins Center --> alinea los elementos sobre el eje vertical.
+
+
+stretch: --> Estira los elementos para llenar el contenedor verticalmente.
+center: -->  Centra los elementos verticalmente en el contenedor.
+flex-start: -->  Alinea los elementos en la parte superior del contenedor.
+flex-end:  --> Alinea los elementos en la parte inferior del contenedor.
+baseline: -->  Alinea los elementos en su línea base. (puede usarse en HOVER).
+
+
+------
+
+Aligns Content--> en flex, cuando tengo mas de una columna, se usa esta propiedad para alinear
+
+stretch: --> Estira los elementos para llenar el contenedor verticalmente.
+center: -->  Centra los elementos verticalmente en el contenedor.
+flex-start: -->  Alinea los elementos en la parte superior del contenedor.
+flex-end:  --> Alinea los elementos en la parte inferior del contenedor.
+baseline: -->  Alinea los elementos en su línea base. (puede usarse en HOVER).
+
+*/
+
+/*
+----------------------------------------------------------------------------
+-----------------Propiedas que se aplican a los hijos-----------------------
+----------------------------------------------------------------------------
+
+-order --> SE PUEDE ELEGIR UN ORDEN QUE APAREZCA LOS HIJOS ORDER:2
+-flex-grow --> la capacidad de crecimiento de un elemento flexible en relación con los demás elementos          flexibles dentro del mismo contenedor
+
+
+-flex-shrink --> Define la capacidad de encogimiento de un elemento flexible en relación con los demás elementos flexibles dentro del mismo contenedo
+-flex-basic --> Define el tamaño inicial de un elemento flexible antes de que comience a crecer o contraer.
+
+*/
+
+/*
+En resumen
+Propiedades para el padre (contenedor con display: flex;):
+
+display
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+
+Propiedades para los hijos (elementos dentro del contenedor flex):
+
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+*/
+
