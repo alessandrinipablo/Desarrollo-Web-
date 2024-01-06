@@ -7,25 +7,26 @@
 
 
 
-header, main, footer{
-    background-color:white;
-    margin:3px;
-    border: 1px solid black;
-}
-
 
 /* Aplico la fuente que baje de Google Fonts*/
 body {
     font-family: 'Roboto', sans-serif; 
     font-size: 16px;
+    margin: 10px;
+    border: 2px solid;
 }
+
+header, main, footer{
+    margin: 20px;
+
+}
+
 
 header {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-between; /* Distribuir los elementos al extremo izquierdo y derecho */
     align-items: center; /* Centrar verticalmente los elementos en el header */
-    padding: 20px; /* Añadir espacio alrededor del contenido */
     background-color: #f0f0f0; /* Color de fondo opcional */
 }
 
@@ -37,6 +38,14 @@ nav ul {
     list-style: none; /* Eliminar viñetas de la lista */
     padding: 0; /* Eliminar padding predeterminado de la lista */
     display: flex; /* Utilizar flexbox para los elementos de la lista */
+}
+
+/* Estilos cuando el mouse pasa sobre el elemento */
+    nav ul li:hover {
+         border-radius: 05px;
+         background-color: rgba(230, 233, 232, 0.521); /* Color de fondo al pasar el mouse */
+         cursor: pointer; /* Cambia el cursor a una mano */
+         color: #f0f0f0; /* Color del texto al pasar el mouse */
 }
 
 nav li {
@@ -52,10 +61,54 @@ nav a {
 
 
 main{
-    width: 100%;
+    width: 90%;
     margin: 1px;
 }
 
+/* Grids papagina de inicio */
+
+/* main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;  /* Dos columnas principales, la primera ocupa el doble de espacio que la segunda */
+    grid-template-rows: repeat(6, 1fr);  /* Seis filas iguales */
+    grid-template-areas:
+        "not1 not1 ad"
+        "not2 not2 ad"
+        "not3 not3 ad"
+        "not4 not4 ad"
+        "secciones-imagenes secciones-imagenes ad"
+        "secciones-videos secciones-videos ad"
+        "secciones-mapas secciones-mapas ad";
+    grid-gap: 10px;  /* Espaciado entre las celdas */
+/* } */ 
+
+/* Estilos específicos para las secciones */
+section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.ad {
+    background-color: #e0e0e0;  /* Fondo gris para el aside */
+}
+
+
+.secciones-imagenes,
+.secciones-videos,
+.secciones-mapas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+
+
+
+
+.secciones_bienvenida, .ad, .secciones_imagenes, .secciones_videos, .secciones_mapas, footer{
+    border: 2px solid;
+}
 .tituloTarjetaIndex{
     text-align: center;
 }
@@ -77,4 +130,9 @@ main{
 
 .form-control {
     font-weight: bold;  /* Texto más negrita */
+}
+
+
+footer{
+    width: 90%;
 }
