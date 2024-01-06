@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-
-
-
 /* Aplico la fuente que baje de Google Fonts*/
 body {
     font-family: 'Roboto', sans-serif; 
@@ -16,28 +13,26 @@ body {
     border: 2px solid;
 }
 
-header, main, footer{
-    margin: 20px;
-
-}
-
-
 header {
     display: flex;
     width: 90%;
-    justify-content: space-between; /* Distribuir los elementos al extremo izquierdo y derecho */
-    align-items: center; /* Centrar verticalmente los elementos en el header */
-    background-color: #f0f0f0; /* Color de fondo opcional */
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #f0f0f0;
+    margin:10px; 
 }
 
+
+
 .nombreEmpresa h2 {
-    margin: 0; /* Eliminar márgenes predeterminados del h1 */
+    margin: 0; 
 }
 
 nav ul {
     list-style: none; /* Eliminar viñetas de la lista */
     padding: 0; /* Eliminar padding predeterminado de la lista */
     display: flex; /* Utilizar flexbox para los elementos de la lista */
+    justify-content: right;
 }
 
 /* Estilos cuando el mouse pasa sobre el elemento */
@@ -58,57 +53,117 @@ nav a {
     font-size: 1rem;
 }
 
-
-
-main{
-    width: 90%;
-    margin: 1px;
+footer {
+    display: flex;; /* Alinear elementos a los extremos */
+    align-items: center; /* Alinear elementos verticalmente al centro */
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f0f0f0; /* Color de fondo del footer */
+    color: #3a3939; /* Color de texto blanco */
 }
 
-/* Grids papagina de inicio */
+.derechos-reservados {
+    /* Estilos específicos para "Derechos Reservados" */
+    margin-right:10px;
+}
 
-/* main {
+.redes {
+    display: flex;
+    gap: 10px; 
+}
+
+.redes img {
+    /* Estilos específicos para las imágenes de las redes sociales */
+    width: 30px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta la altura según tus necesidades */
+}
+
+
+
+.contenedor_index_ad {
     display: grid;
-    grid-template-columns: 2fr 1fr;  /* Dos columnas principales, la primera ocupa el doble de espacio que la segunda */
-    grid-template-rows: repeat(6, 1fr);  /* Seis filas iguales */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-flow: row;
     grid-template-areas:
-        "not1 not1 ad"
-        "not2 not2 ad"
-        "not3 not3 ad"
-        "not4 not4 ad"
-        "secciones-imagenes secciones-imagenes ad"
-        "secciones-videos secciones-videos ad"
-        "secciones-mapas secciones-mapas ad";
-    grid-gap: 10px;  /* Espaciado entre las celdas */
-/* } */ 
+        "info info ad"
+        "info info ad"
+        "info info ad"
+        "info info ad";
+    padding: 20px; /* Añadir un relleno al contenedor principal */
+    background-color: #f2f2f2; /* Agregar un color de fondo */
+}
+  
+  .info { 
+    grid-area: info; }
+  
+  .ad {
+     grid-area: ad; 
+    }
 
-/* Estilos específicos para las secciones */
-section {
+    .info {
+        grid-area: info;
+        padding: 20px;
+        background-color: #ffffff; /* Color de fondo blanco */
+        border-radius: 8px; /* Esquinas redondeadas */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    }
+
+    article {
+        height: 90%; 
+        margin: 10px;
+        padding: 20px;
+        border-radius: 8px; 
+        background-color: #fff; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    .ad {
+        padding: 20px;
+        background-color: #ffffff; 
+        border-radius: 8px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    
+     .ad-1,.ad-2{
+        margin-bottom: 10px; /* Espaciado inferior entre las divisiones de la publicidad */
+        width:90%;
+        height:45%;
+        border: 1px solid rgb(56, 56, 56);
+        border-radius: 10px;
+        text-align: center;
+        align-self: center;/* Justificar el contenido a lo ancho*/
+        align-items: center;
+        font-weight: bold;
+    }
+
+
+
+
+.seccion_imagenes,
+.seccion_videos,
+.seccion_mapas {
+    border: 1px solid rgb(56, 56, 56);
     padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-.ad {
-    background-color: #e0e0e0;  /* Fondo gris para el aside */
+.seccion_videos{
+    display: flex;
+    flex-direction: row;   
 }
 
-
-.secciones-imagenes,
-.secciones-videos,
-.secciones-mapas {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
+.mapa{
+    width: 100%;
 }
 
+.video1, .video2 {
+    flex-grow: 1;
+    margin: 0 5px;
+  }
 
-
-
-
-.secciones_bienvenida, .ad, .secciones_imagenes, .secciones_videos, .secciones_mapas, footer{
-    border: 2px solid;
-}
 .tituloTarjetaIndex{
     text-align: center;
 }
@@ -132,7 +187,3 @@ section {
     font-weight: bold;  /* Texto más negrita */
 }
 
-
-footer{
-    width: 90%;
-}
