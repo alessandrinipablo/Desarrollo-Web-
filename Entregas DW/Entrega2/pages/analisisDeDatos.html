@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="inteligencia artificial, agricultura de precisión, tecnología agrícola, análisis de datos, agrotecnología">
+    <meta name="keywords"
+        content="inteligencia artificial, agricultura de precisión, tecnología agrícola, análisis de datos, agrotecnología">
     <link rel="icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Analisis de datos - AgroServicios Inteligentes</title>
@@ -17,9 +18,11 @@
             <!-- Logo -->
             <img src="../img/logo.png" alt="Logo" title="Logo" width="100px">
         </div>
+
         <div class="nombreEmpresa">
-            <h2>AgroServicios Inteligentes</h2>
+            <h1>AgroServicios Inteligentes</h1>
         </div>
+        
         <!-- Menu de navegacion -->
         <nav>
             <ul>
@@ -36,67 +39,147 @@
     </header>
     <main>
 
-        <h1>Analisis de de Datos</h1>
-        <section id="analisis_datos">
-            <h2><strong>Realice la seleccion:</strong> </h2>
 
-            <form class="analisis">
-                <ul>
-                    <li><label for="cultivo">Seleccione el Cultivo:</label>
+        <section id="analisis_datos">
+
+            <div class="formulario">
+                <form class="analisis">
+                    <h2 class="h2_formulario"><strong>Realice la seleccion:</strong> </h2>
+                    <div class="linea1">
+                        <label for="cultivo">Seleccione el Cultivo:</label>
                         <select id="cultivo" name="cultivo">
                             <option value="maiz">Maíz</option>
                             <option value="trigo">Trigo</option>
                             <option value="soja">Soja</option>
                             <option value="otros">Otros</option>
                         </select>
-                    </li>
-                    <li><label for="periodo">Seleccione el Período de Análisis:</label>
+                    </div>
+                    <div class="linea2">
+                        <label for="periodo">Seleccione el Período de Análisis:</label>
                         <select id="periodo" name="periodo">
                             <option value="anual">Anual</option>
                             <option value="trimestral">Trimestral</option>
                             <option value="mensual">Mensual</option>
                         </select>
-                    </li>
-                    <li><label for="año">Seleccione el año:</label>
-                        <select id="año" name="año">
-                            <option value="anual">2023</option>
-                            <option value="trimestral">2022</option>
-                            <option value="mensual">2021</option>
-                            <option value="mensual">2020</option>
-                        </select>
-                    </li>
-                    <br>
-                    <li><input type="reset" value="Limpiar Formulario">
+                    </div>
+                    <div class="linea3">
+                    <label for="año">Seleccione el año:</label>
+                    <select id="año" name="año">
+                        <option value="anual">2023</option>
+                        <option value="trimestral">2022</option>
+                        <option value="mensual">2021</option>
+                        <option value="mensual">2020</option>
+                    </select>
+                    </div>
+                    <div class="linea4">
+                        <input type="reset" value="Limpiar Formulario">
                         <input type="submit" value="Realizar Analisis">
-                    </li>
+                    </div>
+               </form>
+            </div>
+            <div class="tablas">
+                <!-- Aqui se mostrarán las tablas -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nro-Reg</th>
+                            <th>Cultivo</th>
+                            <th>Rinde en QQ</th>
+                            <th>Nombre del Campo</th>
+                            <th>Superficie en Hectareas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reg-01</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-02</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-03</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-04</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-05</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-06</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-07</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-08</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-09</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Reg-10</td>
+                            <td>Maiz</td>
+                            <td>120</td>
+                            <td>La Sombra 1</td>
+                            <td>120</td>
+                        </tr>
 
-                </ul>
-                <br>
-            </form>
-            <br>
-            <img src="../img/Leonardo_Diffusion_XL_graficos_varios_con_datos_sobre_agricul_3.jpg"
-                alt="Gráfico de Análisis" title="Grafico de Analisis de Datos." width="1326" height="700" />
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3>Conclusiones del Análisis:</h3>
-            <br>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.</li>
-            </ul>
+                    </tbody>
+                </table>
 
-            <br>
+            </div>
         </section>
-        <br>
-        <br>
-        <br>
+        <div class="conclusion">
+            <h3>Conclusiones del Análisis:</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur.
+            </p>
+        </div>
+
+   
     </main>
     <footer>
         <p> &copy; 2023 AgroServicios Inteligentes </p>

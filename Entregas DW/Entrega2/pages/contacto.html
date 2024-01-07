@@ -28,6 +28,7 @@
     <!-- Titulo de la pagina -->
     <title>Inicio - AgroServicios Inteligentes</title>
 </head>
+
 <body>
     <!-- ENCABEZADO  -->
     <header>
@@ -36,7 +37,7 @@
             <img src="../img/logo.png" alt="Logo" title="Logo" width="100px">
         </div>
         <div class="nombreEmpresa">
-            <h2>AgroServicios Inteligentes</h2>
+            <h1>AgroServicios Inteligentes</h1>
         </div>
         <!-- Menu de navegacion -->
         <nav>
@@ -54,86 +55,51 @@
     </header>
 
     <main>
-        <h2>Contacto:</h2>
+
         <!-- Formulario de Contacto -->
-        <div class="p-3 m-0 border-0 bd-example m-0 border-0">
-            <form class="row g-3 formulario"   >
-                <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre">
-                </div>
-                <div class="col-md-6">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="apellido">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="tuemail@email.com" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="numeroCelular" class="form-label">Telefono</label>
-                    <input type="number" class="form-control" id="numeroCelular" placeholder="358 60234**" required>
-                </div>
+        <div class="contenedor_contacto">
+            <div class="mb-3">
+                <label for="nombreInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreInput" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="apellidoInput" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellidoInput" placeholder="Apellido">
+            </div>
+            <div class="mb-3">
+                <label for="emailInput" class="form-label">Direccion de Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="tucorreo@correo.com">
+            </div>
+            <div class="mb-3">
+                <label for="telefonoInput" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="telefonoInput" placeholder="+54-358-6245891" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensajeTextarea" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensajeTextarea" rows="3"></textarea>
+            </div>
         
-                <div class="col-12">
-                    <label for="razonSocial" class="form-label">Razon Social</label>
-                    <input type="text" class="form-control" id="razonSocial" placeholder="Sino es empresa, ponga su nombre y apellido">
-                </div>
-                <div class="col-12">
-                    <label for="direccion" class="form-label">Direccion</label>
-                    <input type="text" class="form-control" id="direccion" placeholder="Avenida San Martin">
-                </div>
-        
-                <div class="col-md-6">
-                    <label for="ciudad" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="ciudad">
-                </div>
-                <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Codigo Postal</label>
-                    <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-md-4">
-                    <label for="inputState" class="form-label">Motivo de Contacto</label required>
-                    <select id="inputState" class="form-select">
-                        <option selected="">Elegir opcion</option>
-                        <option>Contratar el Servicio</option>
-                        <option>Solicitar un Asesor</option>
-                        <option>Realizar un Queja</option>
-                    </select>
-                </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Confirmar?
-                        </label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
-                <div class="col-12">
-                    <button type="reset" class="btn btn-primary">Resetear Formulario</button>
-                </div>
-            </form>
+            <div class="d-flex justify-content-center">
+                <button type="reset" class="btn btn-secondary me-2">Limpiar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
         </div>
         
-    
-        
-    
+
+
     </main>
-    
-    
-        
-    </body>
-    <footer>
-        <p> &copy; 2023 AgroServicios Inteligentes </p>
-        <img src="../img/instagram.ico" title=" Instagram " alt="Instagram">
-        <img src="../img/linkedin.ico" title=" Linkedin " alt="Linkedin">
-        <img src="../img/twitter.ico" title=" Twitter " alt="Twitter">
-        <img src="../img/youtube.ico" title=" Youtube " alt="Youtube">
-        <p><a href="#navegador"><strong>Ir a Inicio</strong></a></p>
-    </footer>
-    
-    
-    </html>
+
+
+
+</body>
+<footer>
+    <p> &copy; 2023 AgroServicios Inteligentes </p>
+    <img src="../img/instagram.ico" title=" Instagram " alt="Instagram">
+    <img src="../img/linkedin.ico" title=" Linkedin " alt="Linkedin">
+    <img src="../img/twitter.ico" title=" Twitter " alt="Twitter">
+    <img src="../img/youtube.ico" title=" Youtube " alt="Youtube">
+    <p><a href="#navegador"><strong>Ir a Inicio</strong></a></p>
+</footer>
+
+
+</html>

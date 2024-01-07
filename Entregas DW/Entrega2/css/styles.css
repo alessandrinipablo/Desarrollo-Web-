@@ -11,59 +11,75 @@ body {
     font-size: 16px;
     margin: 10px;
     border: 2px solid;
+
 }
 
+/* Estilos al Header  */
 header {
     display: flex;
-    width: 90%;
+    width: 99%;
+    margin: 10px;
+    height: auto;
     justify-content: space-between; 
     align-items: center; 
     background-color: #f0f0f0;
-    margin:10px; 
+    border:1px solid rgb(197, 195, 191) ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+  
 }
 
-
-
-.nombreEmpresa h2 {
+/*  Estilos al h1 del nombre de la empresa que lo puse en la la barra de navegacion */
+h1{
+    color:rgb(36, 36, 36);
     margin: 0; 
 }
 
+
+
+/* Estilos a la barra de navegacion. */
 nav ul {
-    list-style: none; /* Eliminar viñetas de la lista */
-    padding: 0; /* Eliminar padding predeterminado de la lista */
-    display: flex; /* Utilizar flexbox para los elementos de la lista */
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
     justify-content: right;
 }
 
-/* Estilos cuando el mouse pasa sobre el elemento */
+
+
+/* Estilos cuando el mouse pasa sobre la barra de navegacion */
     nav ul li:hover {
          border-radius: 05px;
-         background-color: rgba(230, 233, 232, 0.521); /* Color de fondo al pasar el mouse */
-         cursor: pointer; /* Cambia el cursor a una mano */
-         color: #f0f0f0; /* Color del texto al pasar el mouse */
+         background-color: rgba(30, 31, 30, 0.521); 
+         cursor: pointer; 
+         color: #f7f2f2; 
 }
 
+/*  Un poco de espacio entre los botones de navegacion entre paginas */
 nav li {
-    margin-right: 20px; /* Espaciado entre elementos de la lista */
+    margin-right: 30px; 
 }
+
 
 nav a {
-    text-decoration: none; /* Eliminar subrayado del enlace */
-    color: #080808; /* Color del texto del enlace */
+    text-decoration: none; 
+    color: #080808; 
     font-size: 1rem;
 }
 
+/* Estilo al footer */
 footer {
-    display: flex;; /* Alinear elementos a los extremos */
-    align-items: center; /* Alinear elementos verticalmente al centro */
+    display: flex;
+    align-items: center; 
     justify-content: space-around;
     padding: 10px;
-    background-color: #f0f0f0; /* Color de fondo del footer */
-    color: #3a3939; /* Color de texto blanco */
-}
+    background-color: #f0f0f0; 
+    color: #3a3939; }
+
+
 
 .derechos-reservados {
-    /* Estilos específicos para "Derechos Reservados" */
+
     margin-right:10px;
 }
 
@@ -73,13 +89,14 @@ footer {
 }
 
 .redes img {
-    /* Estilos específicos para las imágenes de las redes sociales */
+ 
     width: 30px; /* Ajusta el ancho según tus necesidades */
     height: 30px; /* Ajusta la altura según tus necesidades */
 }
 
+/*  Estilos a la pagina de index */
 
-
+/* Grids  */
 .contenedor_index_ad {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -91,12 +108,13 @@ footer {
         "info info ad"
         "info info ad"
         "info info ad";
-    padding: 20px; /* Añadir un relleno al contenedor principal */
-    background-color: #f2f2f2; /* Agregar un color de fondo */
+    padding: 20px; 
+    background-color: #f2f2f2; 
 }
   
   .info { 
-    grid-area: info; }
+    grid-area: info; 
+}
   
   .ad {
      grid-area: ad; 
@@ -105,9 +123,9 @@ footer {
     .info {
         grid-area: info;
         padding: 20px;
-        background-color: #ffffff; /* Color de fondo blanco */
-        border-radius: 8px; /* Esquinas redondeadas */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        background-color: #ffffff;   
+        border-radius: 8px;  
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
     }
 
     article {
@@ -118,28 +136,34 @@ footer {
         background-color: #fff; 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     }
+
+
     .ad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         padding: 20px;
         background-color: #ffffff; 
         border-radius: 8px; 
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     }
     
-     .ad-1,.ad-2{
-        margin-bottom: 10px; /* Espaciado inferior entre las divisiones de la publicidad */
+     .ad-1, .ad-2{
+        background: #979ea0;
+        margin-bottom:40px;
+        padding: 100px;
         width:90%;
         height:45%;
         border: 1px solid rgb(56, 56, 56);
         border-radius: 10px;
         text-align: center;
-        align-self: center;/* Justificar el contenido a lo ancho*/
+        align-self: center;
         align-items: center;
         font-weight: bold;
     }
 
-
-
-
+/* Estilo a todas las secciones del index, y para tener nocion de la separacion. */
 .seccion_imagenes,
 .seccion_videos,
 .seccion_mapas {
@@ -152,7 +176,8 @@ footer {
 
 .seccion_videos{
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
+    padding: 2px;   
 }
 
 .mapa{
@@ -164,6 +189,10 @@ footer {
     margin: 0 5px;
   }
 
+.img-Index{
+    width:210px;
+    height: 160px;
+}
 .tituloTarjetaIndex{
     text-align: center;
 }
@@ -173,17 +202,222 @@ footer {
     height:300px;
 }
 
+
+/* Estilos para pagina Analisis de datos */
+
+/*  contenedor de formulario que activa la tabla (activaria) */
 .formulario{
+    display: flex;
+    flex-direction:row; 
+    align-items:center; 
+    max-width: 400px;
+    margin-right: 20px; 
+}
+
+/* contenedor donde esta la tabla */
+.tablas{
+    border:1px solid rgb(114, 113, 113,0.2);
     width: auto;
 }
 
-.formulario {
-    width: auto;
-  /* Borde más marcado */
+/*  estilos a la tabla */
+table{
+    color:#272626;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+thead{
+    background-color: #969393;
+}
+
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td{
+    padding: 15px;
+    border-bottom: solid 1px ;
+    text-align: center;
+}
+
+tbody tr{
+    cursor: pointer;
+
+}
+tbody tr:hover{
+    background:rgb(211, 209, 209);
+}
+
+
+/*  activo flex, entre el formulario y la tabla de la pagina analisis de datos */
+#analisis_datos {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.formulario,
+.tablas {
+    width: 50%;
+    padding: 0px;
+}
+
+.formulario{
+    background: url("../img/analisis_datos.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.analisis{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f5f1f1;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h2_formulario{
+    background-color: #525050;
+}
+
+.analisis label,
+.analisis select,
+.analisis input {
+    width: 100%; 
 
 }
 
-.form-control {
-    font-weight: bold;  /* Texto más negrita */
+.conclusion{
+    border: 1px solid ;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    line-height: 2;
+    padding: 20px;
+    margin: 50px;
+
+}
+
+/*  Estilos servicios */
+
+.img_tar{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor_tarjetas{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+
+}
+
+.tarjetas_servicios{
+    width: 100%;
+    margin: 20px;
+    border-radius: 06px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+
+
+.tarjetas_servicios:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+
+}
+
+
+.tarjetas_servicios .contenido{
+    padding: 15px;
+    text-align: center;
+
+}
+
+.tarjetas_servicios .contenido p{
+    line-height: 1.5;
+    color:#6a6a6a;
+
+}
+
+.tarjetas_servicios .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.tarjetas_servicios .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.tarjetas_servicios .contenido a:hover{
+    background:#2fb4cc; 
+    color: #FFf;
+
+}
+
+.datos_contacto{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(155, 154, 154);
+}
+
+.datos_contacto p{
+    line-height: 1.5;
+}
+
+/*  estilos paginas noticias */
+.noticias{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 154, 154);
+}
+
+.noticias a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+}
+
+.noticias a:hover{
+    background:#295e68; 
+    color: #FFf;
+
+}
+
+/*  estilos pagina contacto. */
+.contenedor_contacto{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 10px;
 }
 
