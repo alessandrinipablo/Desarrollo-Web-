@@ -1,0 +1,57 @@
+
+
+// Comentarios --> este comentario queda en sass
+/*Comentario --> este compila*/
+
+
+// 1- /*SASS PERMITE ANIDAR SELECTORES*/
+// 2- /*Trabajar con variables.*/
+// 3- /*Operaciones matematicas*/
+
+
+/*Las variables se declaran $(signo peso) nombre de la variable, y le asigno valor
+luego la invoco donde la uso, con $y el nombre*/
+
+/* Ejemplo en margin, si tenia la variable de que tenga 15px, le puedo agregar 5px mas, y queda como 20px*/
+
+$color-principal:#fafafa;
+$fuente:Arial;
+$margin: (15px+05px);
+
+body{
+    background-color: aqua;
+    }
+
+/*A continuacon se ven las anidaciomnes que se hicieron.*/
+header{
+    background: bisque;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+
+    /*ESTO QUIERO DECIR QUE SE APLICA AL H1 QUE ES HIJO DE HEADER*/
+    h1{
+        font-style: $fuente;
+        color:$color-principal;
+        text-transform: uppercase;
+    }
+
+    nav{
+        background-color: rgb(8, 94, 94);
+        display: flex;
+            li{
+                list-style: none;
+                margin: $margin;
+                display: inline-block;
+                
+                a{
+                    text-decoration: none;
+                    color: $color-principal;
+                }
+            }
+        
+    }
+
+}
+

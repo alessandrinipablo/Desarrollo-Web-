@@ -1,0 +1,40 @@
+/*MIXING --> */  // ESTILO FUNCIONES EN PROGRAMACION.
+
+/*
+1 --> CON PARAMETROS
+2 --> SIN PARAMETROS 
+*/
+// cada vez que aparezca los a, aplica mixing
+@mixin anclas{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blanchedalmond;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    color: red;
+    @include flex; //invoco el mixin flex
+}
+
+
+// MIXING CON PARAMETROS.
+
+// se van a pasar por paraemtros el tamaño y la alineacion.
+@mixin parrafosConParametros($size, $alineacion){
+    font-size: $size;
+    text-align: $alineacion;
+
+}
+
+
+// invocacion.
+.parrafos{
+    @include parrafosConParametros(100px,center )
+}

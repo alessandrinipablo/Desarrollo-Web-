@@ -1,0 +1,13 @@
+/* FOOTER*/
+
+footer{
+    text-align: center;
+    background-color: rgb(161, 95, 8);
+    p{
+        color: red;
+    }
+    // uso de un mixing
+    a{
+        @include anclas;
+    }
+}

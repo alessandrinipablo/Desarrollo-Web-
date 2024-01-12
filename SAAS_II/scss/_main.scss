@@ -1,0 +1,14 @@
+
+/*  Separo codigo de css , y voy estilando por seccion
+    El nombre va con guion bajo y el nombre del modulo ej: _main.scss
+    siempre va el _
+    */
+/*Estilos al main*/
+
+main {
+    background-color: $fondo;
+    h2{
+        text-transform: uppercase;
+        font-size: 35px;
+    }
+}

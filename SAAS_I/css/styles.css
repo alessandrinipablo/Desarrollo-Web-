@@ -1,0 +1,36 @@
+/*Comentario --> este compila*/
+/*Las variables se declaran $(signo peso) nombre de la variable, y le asigno valor
+luego la invoco donde la uso, con $y el nombre*/
+/* Ejemplo en margin, si tenia la variable de que tenga 15px, le puedo agregar 5px mas, y queda como 20px*/
+body {
+  background-color: aqua;
+}
+
+/*A continuacon se ven las anidaciomnes que se hicieron.*/
+header {
+  background: bisque;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*ESTO QUIERO DECIR QUE SE APLICA AL H1 QUE ES HIJO DE HEADER*/
+}
+header h1 {
+  font-style: Arial;
+  color: #fafafa;
+  text-transform: uppercase;
+}
+header nav {
+  background-color: rgb(8, 94, 94);
+  display: flex;
+}
+header nav li {
+  list-style: none;
+  margin: 20px;
+  display: inline-block;
+}
+header nav li a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+/*# sourceMappingURL=styles.css.map */

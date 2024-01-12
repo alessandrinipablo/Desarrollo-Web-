@@ -1,0 +1,24 @@
+/*Condicionales*/
+
+// $vista:escritorio;
+$vista:movil;
+
+@if ($vista==escritorio) {
+    /*ejecuta el verdadero*/
+    body{
+        background-color: grey;
+    }
+
+    }
+    
+    @else if($vista==movil){
+        body{
+            background-color: rgb(219, 14, 14);
+        }
+    }
+    @else{
+        body{
+            background-color: rgb(34, 16, 16);
+        }
+
+    }

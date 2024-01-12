@@ -1,0 +1,157 @@
+/*Importo los modulos que cree por separado, sin el guin bajo, ni extension.*/
+/*Una buena practica es que aca esten solamente las importaciones.*/
+/*Modulos para las variables.*/
+/* --> las variables al inicio siempre.*/
+/*Condicionales*/
+body {
+  background-color: rgb(219, 14, 14);
+}
+
+/*BUCLES*/
+/*
+Hace un for de 2 a 6 que para cada h  le asigna un valor.
+*/
+/*CON EL NUMERAL INVOCAMOS LA VARIABLE DEL FOR*/
+h2 {
+  font-size: 4rem; /* --> en este caso multiplica por cada ciclo.*/
+}
+
+/*CON EL NUMERAL INVOCAMOS LA VARIABLE DEL FOR*/
+h3 {
+  font-size: 6rem; /* --> en este caso multiplica por cada ciclo.*/
+}
+
+/*CON EL NUMERAL INVOCAMOS LA VARIABLE DEL FOR*/
+h4 {
+  font-size: 8rem; /* --> en este caso multiplica por cada ciclo.*/
+}
+
+/*CON EL NUMERAL INVOCAMOS LA VARIABLE DEL FOR*/
+h5 {
+  font-size: 10rem; /* --> en este caso multiplica por cada ciclo.*/
+}
+
+/*CON EL NUMERAL INVOCAMOS LA VARIABLE DEL FOR*/
+h6 {
+  font-size: 12rem; /* --> en este caso multiplica por cada ciclo.*/
+}
+
+/*
+to --> termina en el numero anterior.
+through --> termina en el numero exacto.
+*/
+.pink {
+  color: pink;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
+
+/*Extend
+permite extender clases.
+*/
+/*Clase ejemplo*/
+.primerEstilo, .segundoEstilo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.segundoEstilo {
+  font-size: 4rem;
+  /*--> la clase segundo estilo, se le puede extender de otra clase, una especie de herencia.*/
+}
+
+/*MIXING --> */
+/*
+1 --> CON PARAMETROS
+2 --> SIN PARAMETROS 
+*/
+.card {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafos {
+  font-size: 100px;
+  text-align: center;
+}
+
+/* Mapas --> colecciones de variables.*/
+/* recorrer el mapa completo */
+/*
+Creo un each
+dos variables, ya que tiene variable y valor, y que busque en (in) el mapa que cree antes
+luego muestro.
+
+*/
+.facebook {
+  color: red;
+}
+
+.instagram {
+  color: blue;
+}
+
+.twitter {
+  color: yellow;
+}
+
+header {
+  background-color: bisque;
+}
+header h1 {
+  color: black; /* --> llamo la variable que cree en el archivo variable.*/
+  text-align: center;
+}
+
+/* FOOTER*/
+footer {
+  text-align: center;
+  background-color: rgb(161, 95, 8);
+}
+footer p {
+  color: red;
+}
+footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: blanchedalmond;
+}
+
+/*  Separo codigo de css , y voy estilando por seccion
+    El nombre va con guion bajo y el nombre del modulo ej: _main.scss
+    siempre va el _
+    */
+/*Estilos al main*/
+main {
+  background-color: rgb(177, 190, 177);
+}
+main h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+/*Medias queries*/
+@media (max-width: 500px) {
+  body {
+    background-color: blue;
+  }
+}
+/* --> las medias queries van al final*/
+/*
+1 -- > Condicionales.
+2 -- > Bucles.
+3 -- > Mapas.
+4 -- > Extends.
+5 -- > Mixing. -- solicitado para 3er entrega y proyecto final.
+*/
+
+/*# sourceMappingURL=style.css.map */

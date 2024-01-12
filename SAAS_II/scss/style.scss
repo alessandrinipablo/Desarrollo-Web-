@@ -1,0 +1,31 @@
+/*Importo los modulos que cree por separado, sin el guin bajo, ni extension.*/
+
+/*Una buena practica es que aca esten solamente las importaciones.*/
+
+@import "variables"; /* --> las variables al inicio siempre.*/
+@import "condicionales";
+@import "bucles";
+@import "extends";
+@import "mixings";
+@import "mapas";
+@import "header";
+@import "footer";
+@import "main";
+@import "medias-queries";  /* --> las medias queries van al final*/
+
+
+
+
+/*
+1 -- > Condicionales.
+2 -- > Bucles.
+3 -- > Mapas.
+4 -- > Extends.
+5 -- > Mixing. -- solicitado para 3er entrega y proyecto final.
+*/
+
+
+
+
+
+

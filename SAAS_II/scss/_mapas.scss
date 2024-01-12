@@ -1,0 +1,17 @@
+/* Mapas --> colecciones de variables.*/
+
+$mapRedes:(facebook:red,instagram:blue,twitter:yellow);
+/* recorrer el mapa completo */
+
+
+/*
+Creo un each
+dos variables, ya que tiene variable y valor, y que busque en (in) el mapa que cree antes
+luego muestro.
+
+*/
+@each $redSocial, $colorRedSocial in $mapRedes{
+    .#{$redSocial} { 
+        color:$colorRedSocial; 
+    }
+}

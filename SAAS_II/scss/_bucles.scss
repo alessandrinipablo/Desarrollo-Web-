@@ -1,0 +1,32 @@
+/*BUCLES*/
+
+
+/*
+Hace un for de 2 a 6 que para cada h  le asigna un valor.
+*/
+
+@for $i from 2 to 7 {
+    /*CON EL NUMERAL INVOCAMOS LA VARIABLE DEL FOR*/
+    h#{$i}{
+        //tamaño de fuente para todos los H
+        font-size: 2rem * $i; /* --> en este caso multiplica por cada ciclo.*/
+    }
+}
+
+/*
+to --> termina en el numero anterior.
+through --> termina en el numero exacto.
+*/
+
+// --> Listas
+
+$colores:"pink","green","black";
+
+// declaro un each , una variable que va a reccorer la lista que use antes.
+
+@each $color in $colores{
+    
+    .#{$color}{
+        color:#{$color}
+    }  
+}

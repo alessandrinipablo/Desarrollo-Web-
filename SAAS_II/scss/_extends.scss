@@ -1,0 +1,18 @@
+/*Extend
+permite extender clases.
+*/
+
+/*Clase ejemplo*/
+
+
+.primerEstilo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.segundoEstilo{
+    font-size: 4rem;
+    @extend.primerEstilo; /*--> la clase segundo estilo, se le puede extender de otra clase, una especie de herencia.*/
+    
+}
