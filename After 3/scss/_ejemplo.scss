@@ -1,0 +1,20 @@
+/*Ejemplo del uso del umpersand*/
+
+// modo de ejemplo.
+/*
+nav{
+    background-color: gray;
+    li{
+        list-style: none;
+        a{
+            text-decoration:none;
+            color: black;
+            text-transform: uppercase;
+            // para aplicar hover
+            &:hover {
+                background-color: aqua;
+        }
+    }
+}
+}
+*/

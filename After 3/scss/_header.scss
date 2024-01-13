@@ -1,0 +1,51 @@
+/* ENCABEZADO // HEADER */
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    height: 10rem;
+  }
+  
+  .tituloPrincipal {
+    /*
+    text-decoration: none;
+    color: $color-fuentes;
+    lo comento para usar el mixin
+    */
+
+    @include anclas;
+
+    i {
+      font-size: 4rem;
+      color: $color-botones;
+    }
+  
+    h1 {
+      display: inline-block;
+      font-size: 5rem;
+      font-weight: 500;
+    }
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  li {
+    margin-right: 3rem;
+  
+    a {
+ //     text-decoration: none;
+  //     color: $color-fuentes;
+  //     font-size: 3rem;
+      @include anclas; // --> otra vez el mixin
+  
+      &:hover {
+        color: $color-fuentes-sec;
+      }
+    }
+  }
+  

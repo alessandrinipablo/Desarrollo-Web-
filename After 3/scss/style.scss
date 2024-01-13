@@ -1,8 +1,11 @@
-body{
-     background-color: rgb(4, 31, 31);
-     h1{
-        color: tomato;
-    }
-    
-}
+@import "variable";
+@import "mixin";
+@import "fuentes";
+@import "html-body";
+@import "header";
+@import "banner-hero";
+@import "galeria";
+@import "medias-queries";
+@import "ejemplo";
+
 
